@@ -1,0 +1,18 @@
+{
+  "costs": {
+    "ATTACK": 5,
+    "SHIELD": 3,
+    "GAMBLE": 3,
+    "BUY_TIME": 2,
+    "DEPLOY_FIREWALL": 3
+  },
+  "timers": {
+    "DEFENSE_SECONDS": 60
+  },
+  "rewards": {
+    "FAILED_ATTACK_PENALTY": 2
+  },
+  "tuning": {
+    "STARTING_LIVES": 3
+  }
+}

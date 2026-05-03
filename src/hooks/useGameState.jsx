@@ -33,7 +33,46 @@ export function GameProvider({ children }) {
     alert(`Error: ${err.message}`);
   }, []);
 
-  useSocket(handleStateUpdate, handleAttackIncoming, handleAttackResolved, handleRoomError);
+  const handleTeamUpdated = useCallback(({ teamId, team }) => {
+    setRawState(prev => {
+      if (!prev) return prev;
+      return {
+        ...prev,
+        teams: {
+          ...prev.teams,
+          [teamId]: team
+        }
+      };
+    });
+  }, []);
+
+  const handleEventLogged = useCallback((event) => {
+    setRawState(prev => {
+      if (!prev) return prev;
+      const newEvents = [event, ...(prev.eventLog || [])].slice(0, 50);
+      return {
+        ...prev,
+        eventLog: newEvents
+      };
+    });
+  }, []);
+
+  const handleTimeBought = useCallback(({ attackId, newDeadline }) => {
+    setLocalMeta(prev => {
+      if (prev.incomingAttack?.id === attackId) {
+        return {
+          ...prev,
+          incomingAttack: {
+            ...prev.incomingAttack,
+            timeLeft: Math.max(0, Math.floor((newDeadline - Date.now()) / 1000))
+          }
+        };
+      }
+      return prev;
+    });
+  }, []);
+
+  useSocket(handleStateUpdate, handleAttackIncoming, handleAttackResolved, handleRoomError, handleTeamUpdated, handleEventLogged, handleTimeBought);
 
   // Transform raw server state into the UI-expected shape
   useEffect(() => {
@@ -73,10 +112,14 @@ export function GameProvider({ children }) {
       incomingAttack: localMeta.incomingAttack 
         ? {
             ...localMeta.incomingAttack,
-            // Re-calc time left roughly so it updates or rely on internal interval inside component
             timeLeft: Math.max(0, localMeta.incomingAttack.timeLeft)
           } 
-        : null
+        : null,
+      activeAttacks: (rawState.pendingAttacks || []).map(a => ({
+        id: a.id,
+        from: a.fromTeam,
+        to: a.toTeam
+      }))
     };
 
     setGameState(transformed);
@@ -97,7 +140,6 @@ export function GameProvider({ children }) {
       }
 
       socket.emit("submit_answer", {
-        teamId: localMeta.myTeamId,
         roomCode: rawState?.roomCode,
         puzzleId: rawState?.teams[localMeta.myTeamId]?.currentPuzzle?.id,
         answer
@@ -111,7 +153,6 @@ export function GameProvider({ children }) {
 
   const launchAttack = (targetTeamId) => {
     socket.emit("launch_attack", {
-      fromTeamId: localMeta.myTeamId,
       targetTeamId,
       roomCode: rawState?.roomCode
     });
@@ -120,10 +161,27 @@ export function GameProvider({ children }) {
   const repelAttack = (answer) => {
     if (localMeta.incomingAttack) {
       socket.emit("submit_defense", {
-        teamId: localMeta.myTeamId,
         roomCode: rawState?.roomCode,
         attackId: localMeta.incomingAttack.id,
         answer
+      });
+    }
+  };
+
+  const buyTime = () => {
+    if (localMeta.incomingAttack) {
+      socket.emit("buy_time", {
+        roomCode: rawState?.roomCode,
+        attackId: localMeta.incomingAttack.id
+      });
+    }
+  };
+
+  const deployFirewall = () => {
+    if (localMeta.incomingAttack) {
+      socket.emit("deploy_firewall", {
+        roomCode: rawState?.roomCode,
+        attackId: localMeta.incomingAttack.id
       });
     }
   };
@@ -156,11 +214,11 @@ export function GameProvider({ children }) {
     eliminateTeam: (teamId) => organizerSend('eliminate_team', { teamId })
   };
 
-  // Give consumers a stub gameState while connecting
   const currentGameState = gameState || {
     roomCode: '...', phase: 'LOBBY', round: 1, totalRounds: 7, 
     safeZoneActive: false, teams: [], recentEvents: [], 
-    currentPuzzle: { type: '...', text: '...', progress: 0, total: 7 }
+    currentPuzzle: { type: '...', text: '...', progress: 0, total: 7 },
+    activeAttacks: []
   };
 
   return (
@@ -172,6 +230,8 @@ export function GameProvider({ children }) {
       submitAnswer, 
       launchAttack, 
       repelAttack,
+      buyTime,
+      deployFirewall,
       activateShield,
       organizerJoin,
       organizer

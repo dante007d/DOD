@@ -5,6 +5,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { GameRoom } from './game/GameRoom.js';
 import { emitToSocket } from './utils/broadcast.js';
+import { saveRooms, loadRooms } from './utils/db.js';
 
 dotenv.config();
 
@@ -46,12 +47,15 @@ io.on('connection', (socket) => {
     }
   });
 
-  socket.on("submit_answer", ({ teamId, roomCode, puzzleId, answer }) => {
+  socket.on("submit_answer", ({ roomCode, puzzleId, answer }) => {
     try {
       const room = rooms.get(roomCode);
       if (!room) return sendError(socket, "ROOM_NOT_FOUND", "Room does not exist");
       
-      const result = room.submitAnswer(teamId, puzzleId, answer);
+      const team = Object.values(room.state.teams).find(t => t.socketId === socket.id);
+      if (!team) return sendError(socket, "UNAUTHORIZED", "Not authorized");
+
+      const result = room.submitAnswer(team.id, puzzleId, answer);
       if (result.correct) {
         emitToSocket(io, socket.id, "answer_result", {
           correct: true,
@@ -66,12 +70,15 @@ io.on('connection', (socket) => {
     }
   });
 
-  socket.on("launch_attack", ({ fromTeamId, targetTeamId, roomCode }) => {
+  socket.on("launch_attack", ({ targetTeamId, roomCode }) => {
     try {
       const room = rooms.get(roomCode);
       if (!room) return sendError(socket, "ROOM_NOT_FOUND", "Room does not exist");
 
-      const result = room.launchAttack(fromTeamId, targetTeamId);
+      const team = Object.values(room.state.teams).find(t => t.socketId === socket.id);
+      if (!team) return sendError(socket, "UNAUTHORIZED", "Not authorized");
+
+      const result = room.launchAttack(team.id, targetTeamId);
       if (!result.success) {
         sendError(socket, "ATTACK_FAILED", result.error);
       }
@@ -80,12 +87,15 @@ io.on('connection', (socket) => {
     }
   });
 
-  socket.on("submit_defense", ({ teamId, roomCode, attackId, answer }) => {
+  socket.on("submit_defense", ({ roomCode, attackId, answer }) => {
     try {
       const room = rooms.get(roomCode);
       if (!room) return sendError(socket, "ROOM_NOT_FOUND", "Room does not exist");
 
-      const result = room.submitDefense(teamId, attackId, answer);
+      const team = Object.values(room.state.teams).find(t => t.socketId === socket.id);
+      if (!team) return sendError(socket, "UNAUTHORIZED", "Not authorized");
+
+      const result = room.submitDefense(team.id, attackId, answer);
       if (!result.correct) {
         sendError(socket, "WRONG_ANSWER", "Incorrect defense code");
       }
@@ -94,18 +104,45 @@ io.on('connection', (socket) => {
     }
   });
 
-  socket.on("use_token_gamble", ({ teamId, roomCode }) => {
+  socket.on("use_token_gamble", ({ roomCode }) => {
     try {
       const room = rooms.get(roomCode);
       if (!room) return sendError(socket, "ROOM_NOT_FOUND", "Room does not exist");
 
-      const result = room.useTokenGamble(teamId);
+      const team = Object.values(room.state.teams).find(t => t.socketId === socket.id);
+      if (!team) return sendError(socket, "UNAUTHORIZED", "Not authorized");
+
+      const result = room.useTokenGamble(team.id);
       if (!result.success) {
         sendError(socket, "GAMBLE_FAILED", result.error || "Cannot gamble");
       } else {
         // Emit gamble puzzle
         emitToSocket(io, socket.id, "gamble_puzzle", result.puzzle);
       }
+    } catch (err) {
+      sendError(socket, "INTERNAL_ERROR", err.message);
+    }
+  });
+
+  socket.on("buy_time", ({ roomCode, attackId }) => {
+    try {
+      const room = rooms.get(roomCode);
+      if (!room) return sendError(socket, "ROOM_NOT_FOUND", "Room does not exist");
+      const team = Object.values(room.state.teams).find(t => t.socketId === socket.id);
+      if (!team) return sendError(socket, "UNAUTHORIZED", "Not authorized");
+      room.buyTime(team.id, attackId);
+    } catch (err) {
+      sendError(socket, "INTERNAL_ERROR", err.message);
+    }
+  });
+
+  socket.on("deploy_firewall", ({ roomCode, attackId }) => {
+    try {
+      const room = rooms.get(roomCode);
+      if (!room) return sendError(socket, "ROOM_NOT_FOUND", "Room does not exist");
+      const team = Object.values(room.state.teams).find(t => t.socketId === socket.id);
+      if (!team) return sendError(socket, "UNAUTHORIZED", "Not authorized");
+      room.deployFirewall(team.id, attackId);
     } catch (err) {
       sendError(socket, "INTERNAL_ERROR", err.message);
     }
@@ -202,6 +239,23 @@ app.get('/api/health', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3001;
-httpServer.listen(PORT, () => {
-  console.log(`⬡ Operation Prometheus server running on port ${PORT}`);
-});
+
+async function startServer() {
+  const savedData = await loadRooms();
+  for (const [code, data] of Object.entries(savedData)) {
+    const room = new GameRoom(code);
+    room.state = data.state;
+    room.setIO(io);
+    rooms.set(code, room);
+  }
+
+  setInterval(() => {
+    saveRooms(rooms);
+  }, 5000);
+
+  httpServer.listen(PORT, () => {
+    console.log(`⬡ Operation Prometheus server running on port ${PORT}`);
+  });
+}
+
+startServer();

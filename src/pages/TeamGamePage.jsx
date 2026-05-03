@@ -6,6 +6,7 @@ import TokenBar from '../components/TokenBar';
 import TeamRoster from '../components/TeamRoster';
 import SignalLog from '../components/SignalLog';
 import DefenseOverlay from '../components/DefenseOverlay';
+import { audio } from '../utils/audio';
 
 export default function TeamGamePage() {
   const { gameState, submitAnswer, launchAttack, repelAttack, activateShield } = useGameState();
@@ -13,8 +14,38 @@ export default function TeamGamePage() {
   const [flashedTarget, setFlashedTarget] = useState(null);
   const [isAnswerError, setIsAnswerError] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  
+  const [isShaking, setIsShaking] = useState(false);
+  const [isGlitching, setIsGlitching] = useState(false);
+  const prevLivesRef = React.useRef(3);
 
   const myTeam = gameState.teams.find(t => t.id === gameState.myTeamId) || gameState.teams[0];
+
+  React.useEffect(() => {
+    if (gameState.phase === 'STANDBY') {
+      audio.playHum();
+    }
+  }, [gameState.phase]);
+
+  React.useEffect(() => {
+    if (gameState.incomingAttack) {
+      audio.playAlert();
+      setIsShaking(true);
+      const t = setTimeout(() => setIsShaking(false), 500);
+      return () => clearTimeout(t);
+    }
+  }, [gameState.incomingAttack]);
+
+  React.useEffect(() => {
+    if (myTeam && myTeam.lives < prevLivesRef.current) {
+      audio.playCrunch();
+      setIsGlitching(true);
+      const t = setTimeout(() => setIsGlitching(false), 400);
+      prevLivesRef.current = myTeam.lives;
+      return () => clearTimeout(t);
+    }
+    if (myTeam) prevLivesRef.current = myTeam.lives;
+  }, [myTeam?.lives]);
 
   const handleAnswerSubmit = async (answer) => {
     const correct = await submitAnswer(answer);
@@ -23,7 +54,7 @@ export default function TeamGamePage() {
       setTimeout(() => setIsSuccess(false), 800);
     } else {
       setIsAnswerError(true);
-      setTimeout(() => setIsAnswerError(false), 300);
+      setTimeout(() => setIsAnswerError(false), 400); // sync with animation
     }
   };
 
@@ -42,6 +73,14 @@ export default function TeamGamePage() {
     repelAttack(ans);
   };
 
+  const handleBuyTime = () => {
+    buyTime();
+  };
+
+  const handleDeployFirewall = () => {
+    deployFirewall();
+  };
+
   if (myTeam.status === 'ELIMINATED') {
     return (
       <div style={{
@@ -56,8 +95,8 @@ export default function TeamGamePage() {
         border: '4px solid var(--color-danger)'
       }}>
         <div className="hazard-stripes" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', opacity: 0.1, animation: 'glitch 0.2s infinite' }} />
-        <h1 className="mono text-danger uppercase" style={{ fontSize: '8vw', letterSpacing: '0.1em', animation: 'fadePulse 4s infinite', textAlign: 'center', zIndex: 2, margin: 0, textShadow: '0 0 20px rgba(192,57,43,0.8)' }}>
-          CONNECTION SEVERED
+        <h1 className="mono text-danger uppercase" style={{ fontSize: '4vw', letterSpacing: '0.1em', animation: 'fadePulse 4s infinite', textAlign: 'center', zIndex: 2, margin: 0, textShadow: '0 0 20px rgba(192,57,43,0.8)' }}>
+          VICTORY WAS NEVER MEANT FOR YOU ANYWAY
         </h1>
         <p className="mono text-danger uppercase" style={{ fontSize: '2vw', letterSpacing: '0.5em', opacity: 0.8, zIndex: 2, marginTop: '24px' }}>
           OPERATIVE LIQUIDATED
@@ -84,9 +123,18 @@ export default function TeamGamePage() {
   }
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', padding: 'var(--spacing-base)' }}>
+    <div 
+      className={`${isShaking ? "screen-shake" : ""} ${isGlitching ? "screen-glitch" : ""}`}
+      style={{ display: 'flex', minHeight: '100vh', padding: 'var(--spacing-base)' }}
+    >
       {gameState.incomingAttack && (
-        <DefenseOverlay attackDetails={gameState.incomingAttack} onRepel={handleRepel} />
+        <DefenseOverlay 
+          attackDetails={gameState.incomingAttack} 
+          onRepel={handleRepel} 
+          onBuyTime={handleBuyTime}
+          onDeployFirewall={handleDeployFirewall}
+          tokens={myTeam.tokens}
+        />
       )}
 
       {/* Left Column 65% */}
@@ -119,6 +167,7 @@ export default function TeamGamePage() {
             text={gameState.currentPuzzle.text} 
             hint={gameState.currentPuzzle.hint}
             isSuccess={isSuccess}
+            isError={isAnswerError}
           />
           <AnswerInput 
             onSubmit={handleAnswerSubmit} 
@@ -156,6 +205,7 @@ export default function TeamGamePage() {
           selectedTargetId={targetId}
           onSelectTarget={setTargetId}
           flashedTarget={flashedTarget}
+          activeAttacks={gameState.activeAttacks}
         />
         <SignalLog events={gameState.recentEvents} />
       </div>

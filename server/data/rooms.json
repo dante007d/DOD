@@ -1,0 +1,3829 @@
+{
+  "X0JTVN": {
+    "state": {
+      "roomCode": "X0JTVN",
+      "phase": "lobby",
+      "round": 1,
+      "safeZoneActive": false,
+      "teams": {},
+      "pendingAttacks": [],
+      "eventLog": [],
+      "roundConfig": {
+        "1": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "2": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "3": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "4": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "5": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "6": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "7": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 5
+        }
+      }
+    }
+  },
+  "2Q2WLK": {
+    "state": {
+      "roomCode": "2Q2WLK",
+      "phase": "lobby",
+      "round": 1,
+      "safeZoneActive": false,
+      "teams": {
+        "t_a": {
+          "id": "t_a",
+          "displayName": "a",
+          "socketId": "Ru8LOmJFpLBDV7hVAAAV",
+          "lives": 3,
+          "tokens": 60,
+          "status": "active",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [
+            {
+              "timestamp": 1775923808526,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923808717,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923808877,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923809189,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923809350,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923809518,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923809662,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923809854,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923810022,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923810190,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923810366,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923810541,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923810717,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923810886,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923811070,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923811261,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923811446,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923811630,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923811798,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923811989,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923812174,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923812349,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923812541,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923812741,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923812918,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923813102,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923813270,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923813438,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923813614,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923813782,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923813957,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923814133,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923814302,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923814486,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923814661,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923814862,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923815038,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923815190,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923815357,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923815525,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923815702,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923815870,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923816038,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923816206,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923816373,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923816534,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923816709,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923817462,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923817630,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923817798,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923817966,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923818134,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923818302,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923818470,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923818638,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923818822,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923819006,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923819182,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923819358,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923819534,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923819718,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923819902,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923820077,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923820230,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923820398,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775923857176,
+              "amount": -5,
+              "reason": "launched attack"
+            }
+          ],
+          "currentPuzzle": {
+            "id": "e_c_2",
+            "type": "caesar",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "JGNNQ",
+            "hint": "Shift back by 2",
+            "answer": "HELLO",
+            "answerAliases": [
+              "HI"
+            ],
+            "theme": "Basic comms check",
+            "tokenReward": 2
+          }
+        },
+        "t_b": {
+          "id": "t_b",
+          "displayName": "b",
+          "socketId": "97xPtf9x0EW6kQA5AAAX",
+          "lives": 0,
+          "tokens": 0,
+          "status": "eliminated",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [],
+          "currentPuzzle": {
+            "id": "e_n_1",
+            "type": "numeric",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "1-12-16-8-1",
+            "hint": "A=1, B=2",
+            "answer": "ALPHA",
+            "answerAliases": [
+              "TEAM ALPHA"
+            ],
+            "theme": "Squad designation",
+            "tokenReward": 2
+          }
+        }
+      },
+      "pendingAttacks": [
+        {
+          "id": "20db439e-4374-40fd-bf10-4be8692aec6a",
+          "fromTeam": "t_a",
+          "toTeam": "t_b",
+          "defPuzzleId": "e_a_3",
+          "deadline": 1775923917176
+        }
+      ],
+      "eventLog": [
+        {
+          "id": "4e12ec3d-a45c-45ab-8e2a-839650608cd3",
+          "timestamp": 1775923878992,
+          "type": "attack",
+          "message": "[21:41] b HAS BEEN ELIMINATED",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "e8d5478a-f315-4af9-94c9-3b9c33691be0",
+          "timestamp": 1775923857176,
+          "type": "attack",
+          "message": "[21:40] a attacked b",
+          "teams": [
+            "t_a",
+            "t_b"
+          ]
+        },
+        {
+          "id": "e44747eb-051d-4349-b3ae-1a425e096812",
+          "timestamp": 1775923728516,
+          "type": "neutral",
+          "message": "[21:38] b joined the room",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "63e66d7e-c47f-437c-98dc-7703f5399a85",
+          "timestamp": 1775923723069,
+          "type": "neutral",
+          "message": "[21:38] a joined the room",
+          "teams": [
+            "t_a"
+          ]
+        }
+      ],
+      "roundConfig": {
+        "1": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "2": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "3": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "4": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "5": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "6": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "7": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 5
+        }
+      }
+    }
+  },
+  "VUBO6B": {
+    "state": {
+      "roomCode": "VUBO6B",
+      "phase": "lobby",
+      "round": 1,
+      "safeZoneActive": false,
+      "teams": {
+        "t_a": {
+          "id": "t_a",
+          "displayName": "a",
+          "socketId": "XnYIyz8JL6eX9PFTAAAC",
+          "lives": 0,
+          "tokens": 31,
+          "status": "eliminated",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [
+            {
+              "timestamp": 1775925784651,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925784963,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925785291,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925785635,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925785963,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925786307,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925786651,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925786995,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925787355,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925787707,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925788067,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925788419,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925788796,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925789147,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925789499,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925789859,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925790236,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925790612,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925790981,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925791348,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925791732,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925792132,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925792516,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925792908,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925793268,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925793643,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925794003,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925794332,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925794660,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925795404,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925847950,
+              "amount": -5,
+              "reason": "launched attack"
+            },
+            {
+              "timestamp": 1775926022522,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926022890,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926023258,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926023610,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926023970,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926024338,
+              "amount": 1,
+              "reason": "organizer grant"
+            }
+          ],
+          "currentPuzzle": {
+            "id": "e_n_2",
+            "type": "numeric",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "7-1-13-13-1",
+            "hint": "A=1, B=2",
+            "answer": "GAMMA",
+            "answerAliases": [
+              "TEAM GAMMA"
+            ],
+            "theme": "Squad designation",
+            "tokenReward": 2
+          }
+        },
+        "t_b": {
+          "id": "t_b",
+          "displayName": "b",
+          "socketId": "m-xULqkT_ncRVnrqAAAF",
+          "lives": 0,
+          "tokens": 53,
+          "status": "eliminated",
+          "currentPuzzleIndex": 9,
+          "solvedPuzzleIds": [
+            "e_a_4",
+            "e_n_2",
+            "e_c_1",
+            "e_n_1",
+            "e_c_2",
+            "e_n_3",
+            "e_a_1",
+            "e_a_2",
+            "e_n_2"
+          ],
+          "tokenHistory": [
+            {
+              "timestamp": 1775925784437,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925784811,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925785131,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925785468,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925785803,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925786131,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925786475,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925786835,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925787179,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925787531,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925787883,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925788243,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925788604,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925788963,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925789331,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925789683,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925790051,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925790420,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925790796,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925791164,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925791548,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925791923,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925792324,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925792716,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925793084,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925793459,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925793828,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925794172,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925794492,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925795251,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925795596,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775925801528,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1775925805415,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1775925810863,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1775925814432,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1775925817183,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1775925819799,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1775925824528,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1775925827031,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1775925829536,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1775926031346,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926031738,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926032106,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926032474,
+              "amount": 1,
+              "reason": "organizer grant"
+            }
+          ],
+          "currentPuzzle": {
+            "id": "h_n_2",
+            "type": "numeric",
+            "difficulty": "hard",
+            "pool": "main",
+            "cipherText": "5-14-9-7-13-1",
+            "hint": "A=1, B=2",
+            "answer": "ENIGMA",
+            "answerAliases": [
+              "THE ENIGMA"
+            ],
+            "theme": "Target artifact",
+            "tokenReward": 5
+          }
+        },
+        "t_daddy": {
+          "id": "t_daddy",
+          "displayName": "daddy",
+          "socketId": "zsj4JpIXjfa59_nBAAAJ",
+          "lives": 0,
+          "tokens": 72,
+          "status": "eliminated",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [
+            {
+              "timestamp": 1775926017401,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926018074,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926018394,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926018577,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926018753,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926018921,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926019082,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926019257,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926019441,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926019611,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926019771,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926019937,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926020114,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926020283,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926020450,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926020627,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926020778,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926020946,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926021130,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926021305,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926021473,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926021642,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926021809,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926021978,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926022161,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926022346,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926022698,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926023074,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926023434,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926023794,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926024153,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926024514,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926028202,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926028370,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926028530,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926028690,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926028858,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926029034,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926029186,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926029361,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926029530,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926029698,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926029850,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926030018,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926030186,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926030354,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926030570,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926030786,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926031002,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926031162,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926031554,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926031947,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926032290,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926034154,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926035266,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926035922,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926036266,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926036418,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926036722,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926036882,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926037042,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926037194,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926037355,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926037530,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926037690,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926037858,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926038026,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926038210,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926038394,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926038570,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926038738,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926038906,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926039066,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926039243,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926039402,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926039546,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926039714,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926039866,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926040003,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926040122,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926040258,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926040634,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1775926047451,
+              "amount": -5,
+              "reason": "launched attack"
+            },
+            {
+              "timestamp": 1775926049395,
+              "amount": -5,
+              "reason": "launched attack"
+            }
+          ],
+          "currentPuzzle": {
+            "id": "e_a_4",
+            "type": "acrostic",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "Always Training Towards A Common Kernel",
+            "hint": "First letters",
+            "answer": "ATTACK",
+            "answerAliases": [
+              "ATTACK BASE"
+            ],
+            "theme": "Offensive coordination",
+            "tokenReward": 2
+          }
+        }
+      },
+      "pendingAttacks": [],
+      "eventLog": [
+        {
+          "id": "3ade452d-529d-44af-9272-3e64c2029c5b",
+          "timestamp": 1775926228863,
+          "type": "attack",
+          "message": "[22:20] daddy HAS BEEN ELIMINATED",
+          "teams": [
+            "t_daddy"
+          ]
+        },
+        {
+          "id": "4b6b35d8-1528-475e-84af-6eca7a75ee0f",
+          "timestamp": 1775926069932,
+          "type": "attack",
+          "message": "[22:17] a HAS BEEN ELIMINATED",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "cc9bb923-e640-4c3a-a9d0-48c8208f6a15",
+          "timestamp": 1775926069092,
+          "type": "attack",
+          "message": "[22:17] b HAS BEEN ELIMINATED",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "4a7adcc3-b2b7-443b-bcc7-a3614a8138d4",
+          "timestamp": 1775926049395,
+          "type": "attack",
+          "message": "[22:17] daddy attacked a",
+          "teams": [
+            "t_daddy",
+            "t_a"
+          ]
+        },
+        {
+          "id": "df020af4-5199-4977-9022-a0329bfb3f55",
+          "timestamp": 1775926047451,
+          "type": "attack",
+          "message": "[22:17] daddy attacked b",
+          "teams": [
+            "t_daddy",
+            "t_b"
+          ]
+        },
+        {
+          "id": "fa185cac-9ab0-43f0-a2f2-5913c51672a5",
+          "timestamp": 1775926007349,
+          "type": "neutral",
+          "message": "[22:16] daddy joined the room",
+          "teams": [
+            "t_daddy"
+          ]
+        },
+        {
+          "id": "635abd33-e234-4617-9280-331e6b71bb24",
+          "timestamp": 1775925907954,
+          "type": "attack",
+          "message": "[22:15] b lost a life to a's attack",
+          "teams": [
+            "t_b",
+            "t_a"
+          ]
+        },
+        {
+          "id": "90f7c2e1-448b-4812-ad40-b4bc7aa0f2a2",
+          "timestamp": 1775925847950,
+          "type": "attack",
+          "message": "[22:14] a attacked b",
+          "teams": [
+            "t_a",
+            "t_b"
+          ]
+        },
+        {
+          "id": "107d96a2-e532-4d09-a4ac-fdebde1a109c",
+          "timestamp": 1775925829537,
+          "type": "solve",
+          "message": "[22:13] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "c550f256-da1e-4afa-8cb8-6aedbdbdf26f",
+          "timestamp": 1775925827032,
+          "type": "solve",
+          "message": "[22:13] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "7f7948a8-5cbf-402f-ad38-4d750ef6363d",
+          "timestamp": 1775925824528,
+          "type": "solve",
+          "message": "[22:13] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "ba29eb0d-d9e4-4186-9652-f0275376bfdd",
+          "timestamp": 1775925819800,
+          "type": "solve",
+          "message": "[22:13] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "e4ce56e4-28dd-4ffc-80de-f49ed1b60014",
+          "timestamp": 1775925817184,
+          "type": "solve",
+          "message": "[22:13] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "87c43b20-ba83-4e65-a7b7-9f4fdafdeb49",
+          "timestamp": 1775925814432,
+          "type": "solve",
+          "message": "[22:13] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "905a8479-298b-41b0-8d0e-7314f76c56fa",
+          "timestamp": 1775925810863,
+          "type": "solve",
+          "message": "[22:13] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "aa604f9e-53b1-4bf5-a8b1-191747910e5e",
+          "timestamp": 1775925805416,
+          "type": "solve",
+          "message": "[22:13] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "758c1e3a-51a8-42d8-a585-7e438e8d2caa",
+          "timestamp": 1775925801529,
+          "type": "solve",
+          "message": "[22:13] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "6197c77d-1c4b-4688-8bad-d0fa05df1b56",
+          "timestamp": 1775925774205,
+          "type": "neutral",
+          "message": "[22:12] b joined the room",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "5b72e9b9-92c6-4748-8e7a-3e794b227e4b",
+          "timestamp": 1775925767061,
+          "type": "neutral",
+          "message": "[22:12] a joined the room",
+          "teams": [
+            "t_a"
+          ]
+        }
+      ],
+      "roundConfig": {
+        "1": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "2": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "3": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "4": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "5": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "6": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "7": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 5
+        }
+      }
+    }
+  },
+  "NYX8S2": {
+    "state": {
+      "roomCode": "NYX8S2",
+      "phase": "lobby",
+      "round": 1,
+      "safeZoneActive": false,
+      "teams": {
+        "t_a": {
+          "id": "t_a",
+          "displayName": "a",
+          "socketId": "FzN47eqKm4BAeJmvAAAX",
+          "lives": 0,
+          "tokens": 0,
+          "status": "eliminated",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [],
+          "currentPuzzle": {
+            "id": "e_a_1",
+            "type": "acrostic",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "Send Help Into Enemy Lines During Siege",
+            "hint": "First letters",
+            "answer": "SHIELDS",
+            "answerAliases": [
+              "SHIELD"
+            ],
+            "theme": "Hidden order",
+            "tokenReward": 2
+          }
+        },
+        "t_b": {
+          "id": "t_b",
+          "displayName": "b",
+          "socketId": "dl9M-ThyFNrnt4bPAAAT",
+          "lives": 0,
+          "tokens": 0,
+          "status": "eliminated",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [],
+          "currentPuzzle": {
+            "id": "e_a_4",
+            "type": "acrostic",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "Always Training Towards A Common Kernel",
+            "hint": "First letters",
+            "answer": "ATTACK",
+            "answerAliases": [
+              "ATTACK BASE"
+            ],
+            "theme": "Offensive coordination",
+            "tokenReward": 2
+          }
+        },
+        "t_c": {
+          "id": "t_c",
+          "displayName": "c",
+          "socketId": "AWV9CxUTfqpNaUI1AAAV",
+          "lives": 0,
+          "tokens": 0,
+          "status": "eliminated",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [],
+          "currentPuzzle": {
+            "id": "e_n_2",
+            "type": "numeric",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "7-1-13-13-1",
+            "hint": "A=1, B=2",
+            "answer": "GAMMA",
+            "answerAliases": [
+              "TEAM GAMMA"
+            ],
+            "theme": "Squad designation",
+            "tokenReward": 2
+          }
+        }
+      },
+      "pendingAttacks": [],
+      "eventLog": [
+        {
+          "id": "c9e2c90e-be83-44ad-985c-e90960ad1d59",
+          "timestamp": 1775926934298,
+          "type": "attack",
+          "message": "[22:32] c HAS BEEN ELIMINATED",
+          "teams": [
+            "t_c"
+          ]
+        },
+        {
+          "id": "6d2f506e-f10d-406f-a4c6-2f0aa2fa4d36",
+          "timestamp": 1775926825847,
+          "type": "attack",
+          "message": "[22:30] b HAS BEEN ELIMINATED",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "bb582750-484f-496d-8bbb-0813e5f46904",
+          "timestamp": 1775926809584,
+          "type": "neutral",
+          "message": "[22:30] c joined the room",
+          "teams": [
+            "t_c"
+          ]
+        },
+        {
+          "id": "a63ccd0c-5add-4a89-9d97-840ccf19cecb",
+          "timestamp": 1775926804808,
+          "type": "neutral",
+          "message": "[22:30] b joined the room",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "ae8755d9-886f-4fa0-9bae-7d041a01bc81",
+          "timestamp": 1775926393876,
+          "type": "attack",
+          "message": "[22:23] a HAS BEEN ELIMINATED",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "df68ccef-0d51-4841-b4e6-257a3e579992",
+          "timestamp": 1775926391255,
+          "type": "neutral",
+          "message": "[22:23] a joined the room",
+          "teams": [
+            "t_a"
+          ]
+        }
+      ],
+      "roundConfig": {
+        "1": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "2": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "3": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "4": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "5": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "6": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "7": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 5
+        }
+      }
+    }
+  },
+  "9FCTB7": {
+    "state": {
+      "roomCode": "9FCTB7",
+      "phase": "EARLY",
+      "round": 1,
+      "safeZoneActive": false,
+      "teams": {
+        "t_a": {
+          "id": "t_a",
+          "displayName": "a",
+          "socketId": "V8BgWsnBMofYRVMJAAAJ",
+          "lives": 3,
+          "tokens": 21,
+          "status": "active",
+          "currentPuzzleIndex": 10,
+          "solvedPuzzleIds": [
+            "e_a_4",
+            "e_n_1",
+            "e_n_3",
+            "e_a_1",
+            "e_c_2",
+            "e_n_2",
+            "e_c_1",
+            "e_a_2",
+            "e_c_2",
+            "m_s_2"
+          ],
+          "tokenHistory": [
+            {
+              "timestamp": 1776275835462,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776275841040,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776275844451,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776275849953,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776275853373,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776275858785,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776275866655,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776275869754,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776275872920,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776275890779,
+              "amount": 3,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776275906251,
+              "amount": -5,
+              "reason": "launched attack"
+            },
+            {
+              "timestamp": 1776275925164,
+              "amount": -2,
+              "reason": "failed attack penalty"
+            },
+            {
+              "timestamp": 1776275931195,
+              "amount": -5,
+              "reason": "launched attack"
+            },
+            {
+              "timestamp": 1776275939242,
+              "amount": -2,
+              "reason": "failed attack penalty"
+            },
+            {
+              "timestamp": 1776275944885,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776275945036,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776275945188,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776275945340,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776275945486,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776275945644,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776275945788,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776275945932,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776275946091,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776275946244,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776275946411,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776275946564,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776275946724,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776275946884,
+              "amount": 1,
+              "reason": "organizer grant"
+            }
+          ],
+          "currentPuzzle": {
+            "id": "e_c_1",
+            "type": "caesar",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "GHIHQG WKH EDVH",
+            "hint": "Shift back by 3",
+            "answer": "DEFEND THE BASE",
+            "answerAliases": [
+              "DEFEND BASE"
+            ],
+            "theme": "Standard intercept",
+            "tokenReward": 2
+          }
+        },
+        "t_b": {
+          "id": "t_b",
+          "displayName": "b",
+          "socketId": "nUj6P4NP04k2En43AAAL",
+          "lives": 0,
+          "tokens": 0,
+          "status": "eliminated",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [],
+          "currentPuzzle": {
+            "id": "e_a_1",
+            "type": "acrostic",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "Send Help Into Enemy Lines During Siege",
+            "hint": "First letters",
+            "answer": "SHIELDS",
+            "answerAliases": [
+              "SHIELD"
+            ],
+            "theme": "Hidden order",
+            "tokenReward": 2
+          }
+        }
+      },
+      "pendingAttacks": [],
+      "eventLog": [
+        {
+          "id": "e5c71455-24b0-442a-9e5f-133494c6529c",
+          "timestamp": 1776275957965,
+          "type": "neutral",
+          "message": "[23:29] Phase advanced to EARLY",
+          "teams": []
+        },
+        {
+          "id": "bc983127-f415-46b2-938b-c6cf365954db",
+          "timestamp": 1776275949269,
+          "type": "attack",
+          "message": "[23:29] b HAS BEEN ELIMINATED",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "7df08457-1550-4874-ade7-613ba05b41e0",
+          "timestamp": 1776275939242,
+          "type": "success",
+          "message": "[23:28] b repelled attack from a",
+          "teams": [
+            "t_b",
+            "t_a"
+          ]
+        },
+        {
+          "id": "72040a3d-0c01-4461-9fc9-6ac480dd392c",
+          "timestamp": 1776275931195,
+          "type": "attack",
+          "message": "[23:28] a attacked b",
+          "teams": [
+            "t_a",
+            "t_b"
+          ]
+        },
+        {
+          "id": "48c35960-61fc-491d-92fb-35b16544c5e1",
+          "timestamp": 1776275925164,
+          "type": "success",
+          "message": "[23:28] b repelled attack from a",
+          "teams": [
+            "t_b",
+            "t_a"
+          ]
+        },
+        {
+          "id": "b058a18c-d3bf-4f08-9ae9-a38b5d2ff9e0",
+          "timestamp": 1776275906252,
+          "type": "attack",
+          "message": "[23:28] a attacked b",
+          "teams": [
+            "t_a",
+            "t_b"
+          ]
+        },
+        {
+          "id": "5c721032-9c57-411e-b73a-14332736adec",
+          "timestamp": 1776275890779,
+          "type": "solve",
+          "message": "[23:28] a solved cipher (+3 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "02be69ec-933c-4ecb-a286-a9a9662056d0",
+          "timestamp": 1776275872921,
+          "type": "solve",
+          "message": "[23:27] a solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "dbd595e8-8014-4955-9b97-b81f7630e747",
+          "timestamp": 1776275869754,
+          "type": "solve",
+          "message": "[23:27] a solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "2d93ab5b-daf2-4510-8876-4a8af2fdea6b",
+          "timestamp": 1776275866656,
+          "type": "solve",
+          "message": "[23:27] a solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "cf3f028d-4ae4-42f6-9475-9827b3da1e32",
+          "timestamp": 1776275858786,
+          "type": "solve",
+          "message": "[23:27] a solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "098ea9f2-ddda-410a-94f5-9ad22bcd3c7e",
+          "timestamp": 1776275853373,
+          "type": "solve",
+          "message": "[23:27] a solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "c443293e-89cf-4ac2-8a56-e0487f5c8c58",
+          "timestamp": 1776275849953,
+          "type": "solve",
+          "message": "[23:27] a solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "31c17237-bf3a-4436-844c-c64acb8f6f50",
+          "timestamp": 1776275844451,
+          "type": "solve",
+          "message": "[23:27] a solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "ad9c5d1b-2b89-418a-bec1-802076c23ec7",
+          "timestamp": 1776275841040,
+          "type": "solve",
+          "message": "[23:27] a solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "43f20ff1-eb8f-4015-afa9-3d1690993652",
+          "timestamp": 1776275835463,
+          "type": "solve",
+          "message": "[23:27] a solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "9d4ea88b-794f-4d85-a631-b158a17867f5",
+          "timestamp": 1776275818058,
+          "type": "neutral",
+          "message": "[23:26] b joined the room",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "38f9dd71-10d0-4e6b-9433-7496086589c7",
+          "timestamp": 1776275807770,
+          "type": "neutral",
+          "message": "[23:26] a joined the room",
+          "teams": [
+            "t_a"
+          ]
+        }
+      ],
+      "roundConfig": {
+        "1": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "2": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "3": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "4": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "5": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "6": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "7": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 5
+        }
+      }
+    }
+  },
+  "UI47E6": {
+    "state": {
+      "roomCode": "UI47E6",
+      "phase": "lobby",
+      "round": 1,
+      "safeZoneActive": false,
+      "teams": {
+        "t_a": {
+          "id": "t_a",
+          "displayName": "A",
+          "socketId": "yRhs4anTlxPy14U-AAAP",
+          "lives": 0,
+          "tokens": 24,
+          "status": "eliminated",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [
+            {
+              "timestamp": 1776276117994,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276118176,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276118345,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276118528,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276118697,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276119113,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276119273,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276119417,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276119585,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276119761,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276119921,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276120122,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276120457,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276120801,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276121177,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276123337,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276124617,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276124777,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276124945,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276125129,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276125289,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276125457,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276125634,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276125777,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276126081,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276126249,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276126409,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276126577,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276126737,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276126921,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276127081,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276127257,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276127441,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276127601,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276127761,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276128057,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276141171,
+              "amount": -5,
+              "reason": "launched attack"
+            },
+            {
+              "timestamp": 1776276157375,
+              "amount": -2,
+              "reason": "failed attack penalty"
+            },
+            {
+              "timestamp": 1776276163258,
+              "amount": -5,
+              "reason": "launched attack"
+            }
+          ],
+          "currentPuzzle": {
+            "id": "e_n_1",
+            "type": "numeric",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "1-12-16-8-1",
+            "hint": "A=1, B=2",
+            "answer": "ALPHA",
+            "answerAliases": [
+              "TEAM ALPHA"
+            ],
+            "theme": "Squad designation",
+            "tokenReward": 2
+          }
+        },
+        "t_b": {
+          "id": "t_b",
+          "displayName": "b",
+          "socketId": "6LzJ03lMSK3PtJOTAAAR",
+          "lives": 0,
+          "tokens": 16,
+          "status": "eliminated",
+          "currentPuzzleIndex": 6,
+          "solvedPuzzleIds": [
+            "e_n_3",
+            "e_n_2",
+            "e_a_4",
+            "e_c_2",
+            "e_a_1",
+            "e_n_1"
+          ],
+          "tokenHistory": [
+            {
+              "timestamp": 1776276058883,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776276062685,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776276066414,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776276069069,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776276074410,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776276080902,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776276120281,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276120633,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276121002,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276121369,
+              "amount": 1,
+              "reason": "organizer grant"
+            }
+          ],
+          "currentPuzzle": {
+            "id": "e_a_2",
+            "type": "acrostic",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "Bears Always Take The Ammo",
+            "hint": "First letters",
+            "answer": "BATTA",
+            "answerAliases": [
+              "BATA"
+            ],
+            "theme": "Weapons cache drop",
+            "tokenReward": 2
+          }
+        }
+      },
+      "pendingAttacks": [],
+      "eventLog": [
+        {
+          "id": "eed11378-dd39-4170-b698-c441d631df79",
+          "timestamp": 1776276614591,
+          "type": "attack",
+          "message": "[23:40] A HAS BEEN ELIMINATED",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "c1d6df66-f4b0-48c4-9c69-8788e4e20253",
+          "timestamp": 1776276218139,
+          "type": "neutral",
+          "message": "[23:33] Safe Zone DEACTIVATED",
+          "teams": []
+        },
+        {
+          "id": "507fb9ab-44cd-458c-9add-8e4b3c03beeb",
+          "timestamp": 1776276215867,
+          "type": "neutral",
+          "message": "[23:33] Safe Zone ACTIVATED",
+          "teams": []
+        },
+        {
+          "id": "31359d59-afbf-4014-8764-56444d81c706",
+          "timestamp": 1776276181866,
+          "type": "attack",
+          "message": "[23:33] b HAS BEEN ELIMINATED",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "949de9a8-4436-423e-b83a-2960bbf8d063",
+          "timestamp": 1776276163258,
+          "type": "attack",
+          "message": "[23:32] A attacked b",
+          "teams": [
+            "t_a",
+            "t_b"
+          ]
+        },
+        {
+          "id": "6793e1ba-1951-41f2-aeed-431a9f7f3cbc",
+          "timestamp": 1776276157375,
+          "type": "success",
+          "message": "[23:32] b repelled attack from A",
+          "teams": [
+            "t_b",
+            "t_a"
+          ]
+        },
+        {
+          "id": "6efaba6c-7860-406a-934f-c01b6be73738",
+          "timestamp": 1776276141171,
+          "type": "attack",
+          "message": "[23:32] A attacked b",
+          "teams": [
+            "t_a",
+            "t_b"
+          ]
+        },
+        {
+          "id": "b47a3c36-6981-412c-a746-788477067909",
+          "timestamp": 1776276080902,
+          "type": "solve",
+          "message": "[23:31] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "6dfc3df3-397a-4f29-a436-a9cf4c0fca8e",
+          "timestamp": 1776276074411,
+          "type": "solve",
+          "message": "[23:31] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "6d8ea1b7-27a0-4ba9-af54-b886848d63d7",
+          "timestamp": 1776276069069,
+          "type": "solve",
+          "message": "[23:31] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "a64111cf-26aa-4c6d-8090-0c8e9a75f237",
+          "timestamp": 1776276066414,
+          "type": "solve",
+          "message": "[23:31] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "64663a2f-4a5b-448a-b4d6-b5a6778d0803",
+          "timestamp": 1776276062685,
+          "type": "solve",
+          "message": "[23:31] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "fe419e3f-252d-49af-afde-3cce57881403",
+          "timestamp": 1776276058883,
+          "type": "solve",
+          "message": "[23:30] b solved cipher (+2 tokens)",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "93b1affd-a921-4e25-8563-18768ea5c3ed",
+          "timestamp": 1776276050558,
+          "type": "neutral",
+          "message": "[23:30] b joined the room",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "5fa985c3-9fdd-4c9a-847c-a9dbf736856e",
+          "timestamp": 1776276045806,
+          "type": "neutral",
+          "message": "[23:30] A joined the room",
+          "teams": [
+            "t_a"
+          ]
+        }
+      ],
+      "roundConfig": {
+        "1": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "2": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "3": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "4": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "5": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "6": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "7": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 5
+        }
+      }
+    }
+  },
+  "ZT8YIM": {
+    "state": {
+      "roomCode": "ZT8YIM",
+      "phase": "lobby",
+      "round": 1,
+      "safeZoneActive": false,
+      "teams": {
+        "t_hitler": {
+          "id": "t_hitler",
+          "displayName": "hitler",
+          "socketId": "Fx7OzlVO5DV5KITdAAAZ",
+          "lives": 0,
+          "tokens": 11,
+          "status": "eliminated",
+          "currentPuzzleIndex": 8,
+          "solvedPuzzleIds": [
+            "e_a_1",
+            "e_a_2",
+            "e_a_4",
+            "e_c_1",
+            "e_c_2",
+            "e_n_1",
+            "e_n_2",
+            "e_n_3"
+          ],
+          "tokenHistory": [
+            {
+              "timestamp": 1776276760940,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776276764697,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776276769278,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776276774750,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776276777725,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776276782364,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776276786008,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776276788443,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776276807118,
+              "amount": -5,
+              "reason": "launched attack"
+            },
+            {
+              "timestamp": 1776276826722,
+              "amount": -2,
+              "reason": "failed attack penalty"
+            },
+            {
+              "timestamp": 1776276838622,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276838957,
+              "amount": 1,
+              "reason": "organizer grant"
+            }
+          ],
+          "currentPuzzle": {
+            "id": "m_b_1",
+            "type": "binary",
+            "difficulty": "medium",
+            "pool": "main",
+            "cipherText": "01000110 01001001 01010010 01000101",
+            "hint": "ASCII to text",
+            "answer": "FIRE",
+            "answerAliases": [
+              "SHOOT"
+            ],
+            "theme": "Weapon systems command",
+            "tokenReward": 3
+          }
+        },
+        "t_trump": {
+          "id": "t_trump",
+          "displayName": "trump",
+          "socketId": "K9gZsHx3Y89F7-T_AAAb",
+          "lives": 0,
+          "tokens": 16,
+          "status": "eliminated",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [
+            {
+              "timestamp": 1776276836886,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276837053,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276837221,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276837406,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276837566,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276837709,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276837861,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276838005,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276838142,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276838294,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276838789,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276839118,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276840254,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276840429,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276840581,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276840741,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276840893,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276841061,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276841245,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276841397,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276841557,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276841733,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276841901,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276842053,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276842197,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276842358,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276842517,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276842693,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276842878,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276843045,
+              "amount": 1,
+              "reason": "organizer grant"
+            },
+            {
+              "timestamp": 1776276849222,
+              "amount": -5,
+              "reason": "launched attack"
+            },
+            {
+              "timestamp": 1776276866549,
+              "amount": -2,
+              "reason": "failed attack penalty"
+            },
+            {
+              "timestamp": 1776276880104,
+              "amount": -5,
+              "reason": "launched attack"
+            },
+            {
+              "timestamp": 1776276898947,
+              "amount": -2,
+              "reason": "failed attack penalty"
+            }
+          ],
+          "currentPuzzle": {
+            "id": "e_c_1",
+            "type": "caesar",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "GHIHQG WKH EDVH",
+            "hint": "Shift back by 3",
+            "answer": "DEFEND THE BASE",
+            "answerAliases": [
+              "DEFEND BASE"
+            ],
+            "theme": "Standard intercept",
+            "tokenReward": 2
+          }
+        }
+      },
+      "pendingAttacks": [],
+      "eventLog": [
+        {
+          "id": "d354faf7-ce29-4281-bc3c-1d4c967e2ba0",
+          "timestamp": 1776276906527,
+          "type": "attack",
+          "message": "[23:45] hitler HAS BEEN ELIMINATED",
+          "teams": [
+            "t_hitler"
+          ]
+        },
+        {
+          "id": "50b76f3d-9ae2-4d1e-914c-1cb5367d4195",
+          "timestamp": 1776276904732,
+          "type": "attack",
+          "message": "[23:45] trump HAS BEEN ELIMINATED",
+          "teams": [
+            "t_trump"
+          ]
+        },
+        {
+          "id": "d6b8691f-c32d-4518-884f-dc2dc717f9f2",
+          "timestamp": 1776276898947,
+          "type": "success",
+          "message": "[23:44] hitler repelled attack from trump",
+          "teams": [
+            "t_hitler",
+            "t_trump"
+          ]
+        },
+        {
+          "id": "88015386-e917-49c2-9d54-f2a4c77cf48f",
+          "timestamp": 1776276880104,
+          "type": "attack",
+          "message": "[23:44] trump attacked hitler",
+          "teams": [
+            "t_trump",
+            "t_hitler"
+          ]
+        },
+        {
+          "id": "a1efa802-573d-43da-a9cb-9ce6a8c7745e",
+          "timestamp": 1776276866549,
+          "type": "success",
+          "message": "[23:44] hitler repelled attack from trump",
+          "teams": [
+            "t_hitler",
+            "t_trump"
+          ]
+        },
+        {
+          "id": "399147ba-9efd-4fe6-8cba-b1a0a52afe13",
+          "timestamp": 1776276849222,
+          "type": "attack",
+          "message": "[23:44] trump attacked hitler",
+          "teams": [
+            "t_trump",
+            "t_hitler"
+          ]
+        },
+        {
+          "id": "67d05e98-c2b9-4b4f-9a3e-5eedf9aae5aa",
+          "timestamp": 1776276826722,
+          "type": "success",
+          "message": "[23:43] trump repelled attack from hitler",
+          "teams": [
+            "t_trump",
+            "t_hitler"
+          ]
+        },
+        {
+          "id": "60c3f04b-bde5-4c3f-985e-5ec60dff2db9",
+          "timestamp": 1776276807118,
+          "type": "attack",
+          "message": "[23:43] hitler attacked trump",
+          "teams": [
+            "t_hitler",
+            "t_trump"
+          ]
+        },
+        {
+          "id": "45582336-3b34-4951-8d4f-4ebb0bf94a08",
+          "timestamp": 1776276788444,
+          "type": "solve",
+          "message": "[23:43] hitler solved cipher (+2 tokens)",
+          "teams": [
+            "t_hitler"
+          ]
+        },
+        {
+          "id": "705581c7-bdac-4373-975f-63f1c02a8eb5",
+          "timestamp": 1776276786008,
+          "type": "solve",
+          "message": "[23:43] hitler solved cipher (+2 tokens)",
+          "teams": [
+            "t_hitler"
+          ]
+        },
+        {
+          "id": "05091f04-cdba-4141-8584-734a47cff599",
+          "timestamp": 1776276782364,
+          "type": "solve",
+          "message": "[23:43] hitler solved cipher (+2 tokens)",
+          "teams": [
+            "t_hitler"
+          ]
+        },
+        {
+          "id": "414fc886-26e6-440d-8665-27139258607a",
+          "timestamp": 1776276777725,
+          "type": "solve",
+          "message": "[23:42] hitler solved cipher (+2 tokens)",
+          "teams": [
+            "t_hitler"
+          ]
+        },
+        {
+          "id": "5bd1e5f4-c1c4-44c0-9dbb-c21cf725e033",
+          "timestamp": 1776276774750,
+          "type": "solve",
+          "message": "[23:42] hitler solved cipher (+2 tokens)",
+          "teams": [
+            "t_hitler"
+          ]
+        },
+        {
+          "id": "0f95de56-9ee0-4fdf-9f1c-a5823fc88dd5",
+          "timestamp": 1776276769278,
+          "type": "solve",
+          "message": "[23:42] hitler solved cipher (+2 tokens)",
+          "teams": [
+            "t_hitler"
+          ]
+        },
+        {
+          "id": "2368cd81-db65-40b8-8eba-4abbe6db77e2",
+          "timestamp": 1776276764697,
+          "type": "solve",
+          "message": "[23:42] hitler solved cipher (+2 tokens)",
+          "teams": [
+            "t_hitler"
+          ]
+        },
+        {
+          "id": "d2042f4c-fe13-4e67-b61f-35cf939fceb4",
+          "timestamp": 1776276760940,
+          "type": "solve",
+          "message": "[23:42] hitler solved cipher (+2 tokens)",
+          "teams": [
+            "t_hitler"
+          ]
+        },
+        {
+          "id": "0b03dcc5-b483-4a3a-98c8-a545cef60ee0",
+          "timestamp": 1776276751423,
+          "type": "neutral",
+          "message": "[23:42] trump joined the room",
+          "teams": [
+            "t_trump"
+          ]
+        },
+        {
+          "id": "9e1f9ccc-529d-4ada-a57c-817a09deffcd",
+          "timestamp": 1776276733259,
+          "type": "neutral",
+          "message": "[23:42] hitler joined the room",
+          "teams": [
+            "t_hitler"
+          ]
+        }
+      ],
+      "roundConfig": {
+        "1": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "2": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "3": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "4": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "5": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "6": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "7": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 5
+        }
+      }
+    }
+  },
+  "6ZGXN7": {
+    "state": {
+      "roomCode": "6ZGXN7",
+      "phase": "lobby",
+      "round": 1,
+      "safeZoneActive": false,
+      "teams": {
+        "t_a": {
+          "id": "t_a",
+          "displayName": "A",
+          "socketId": "FMsWivvoD2hoM1qyAAAf",
+          "lives": 0,
+          "tokens": 5,
+          "status": "eliminated",
+          "currentPuzzleIndex": 6,
+          "solvedPuzzleIds": [
+            "e_a_4",
+            "e_n_2",
+            "e_a_1",
+            "e_n_1",
+            "e_a_2",
+            "e_c_1"
+          ],
+          "tokenHistory": [
+            {
+              "timestamp": 1776277247385,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776277258482,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776277266469,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776277282951,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776277285967,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776277293056,
+              "amount": 2,
+              "reason": "solved puzzle"
+            },
+            {
+              "timestamp": 1776277311791,
+              "amount": -5,
+              "reason": "launched attack"
+            },
+            {
+              "timestamp": 1776277325744,
+              "amount": -2,
+              "reason": "failed attack penalty"
+            }
+          ],
+          "currentPuzzle": {
+            "id": "e_c_2",
+            "type": "caesar",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "JGNNQ",
+            "hint": "Shift back by 2",
+            "answer": "HELLO",
+            "answerAliases": [
+              "HI"
+            ],
+            "theme": "Basic comms check",
+            "tokenReward": 2
+          }
+        },
+        "t_b": {
+          "id": "t_b",
+          "displayName": "B",
+          "socketId": "rNKKTROrtICVLqsDAAAh",
+          "lives": 0,
+          "tokens": 0,
+          "status": "eliminated",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [],
+          "currentPuzzle": {
+            "id": "e_a_1",
+            "type": "acrostic",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "Send Help Into Enemy Lines During Siege",
+            "hint": "First letters",
+            "answer": "SHIELDS",
+            "answerAliases": [
+              "SHIELD"
+            ],
+            "theme": "Hidden order",
+            "tokenReward": 2
+          }
+        },
+        "t_fucker": {
+          "id": "t_fucker",
+          "displayName": "fucker",
+          "socketId": "8YK-eAatV4MirsfCAAAj",
+          "lives": 0,
+          "tokens": 0,
+          "status": "eliminated",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [],
+          "currentPuzzle": {
+            "id": "e_c_2",
+            "type": "caesar",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "JGNNQ",
+            "hint": "Shift back by 2",
+            "answer": "HELLO",
+            "answerAliases": [
+              "HI"
+            ],
+            "theme": "Basic comms check",
+            "tokenReward": 2
+          }
+        }
+      },
+      "pendingAttacks": [],
+      "eventLog": [
+        {
+          "id": "1663f96c-fdf6-4268-8338-2e205172ab0d",
+          "timestamp": 1776277354108,
+          "type": "attack",
+          "message": "[23:52] B HAS BEEN ELIMINATED",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "1a4e8d99-eb55-4463-9339-977d3072fedb",
+          "timestamp": 1776277353060,
+          "type": "attack",
+          "message": "[23:52] A HAS BEEN ELIMINATED",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "5d053cb4-5827-486f-840a-4b6a937b87cf",
+          "timestamp": 1776277341587,
+          "type": "attack",
+          "message": "[23:52] fucker HAS BEEN ELIMINATED",
+          "teams": [
+            "t_fucker"
+          ]
+        },
+        {
+          "id": "f6152417-9602-444c-b273-32b6d34c88d3",
+          "timestamp": 1776277325744,
+          "type": "success",
+          "message": "[23:52] fucker repelled attack from A",
+          "teams": [
+            "t_fucker",
+            "t_a"
+          ]
+        },
+        {
+          "id": "f07b5a6f-56cd-4c4d-b0ec-e749265f568a",
+          "timestamp": 1776277311791,
+          "type": "attack",
+          "message": "[23:51] A attacked fucker",
+          "teams": [
+            "t_a",
+            "t_fucker"
+          ]
+        },
+        {
+          "id": "a4ba6199-e3b6-4589-98fd-f5c15e1ba896",
+          "timestamp": 1776277293056,
+          "type": "solve",
+          "message": "[23:51] A solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "5da35b34-e8f9-46f4-8181-8a9ceeb88843",
+          "timestamp": 1776277285968,
+          "type": "solve",
+          "message": "[23:51] A solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "95ac4a0e-2b39-42ae-87a5-02632bfd0709",
+          "timestamp": 1776277282951,
+          "type": "solve",
+          "message": "[23:51] A solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "852ab7fa-ca0e-439a-b9cf-ac1250d32931",
+          "timestamp": 1776277266469,
+          "type": "solve",
+          "message": "[23:51] A solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "715ef2f2-bd6a-421f-8aac-81ad317b01b1",
+          "timestamp": 1776277258482,
+          "type": "solve",
+          "message": "[23:50] A solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "63e6b772-b4e3-47cf-a0b2-c1be7c91a4d4",
+          "timestamp": 1776277247386,
+          "type": "solve",
+          "message": "[23:50] A solved cipher (+2 tokens)",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "44707a64-e17d-4c34-a58c-6976e2ce8723",
+          "timestamp": 1776277217330,
+          "type": "neutral",
+          "message": "[23:50] fucker joined the room",
+          "teams": [
+            "t_fucker"
+          ]
+        },
+        {
+          "id": "23088e2a-a3fa-4379-ad96-71f3341df127",
+          "timestamp": 1776277156782,
+          "type": "neutral",
+          "message": "[23:49] B joined the room",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "cbece4c4-15f9-4999-960e-e2c9694e9a39",
+          "timestamp": 1776277144982,
+          "type": "neutral",
+          "message": "[23:49] A joined the room",
+          "teams": [
+            "t_a"
+          ]
+        }
+      ],
+      "roundConfig": {
+        "1": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "2": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "3": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "4": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "5": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "6": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "7": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 5
+        }
+      }
+    }
+  },
+  "YM8BZO": {
+    "state": {
+      "roomCode": "YM8BZO",
+      "phase": "lobby",
+      "round": 1,
+      "safeZoneActive": false,
+      "teams": {},
+      "pendingAttacks": [],
+      "eventLog": [
+        {
+          "id": "ed9d5572-484f-42b4-b768-127309a892d1",
+          "timestamp": 1777834375180,
+          "type": "neutral",
+          "message": "[00:22] Safe Zone DEACTIVATED",
+          "teams": []
+        },
+        {
+          "id": "478f50a4-47ab-454d-83d6-9bdf6fb4f8ac",
+          "timestamp": 1777834374018,
+          "type": "neutral",
+          "message": "[00:22] Safe Zone ACTIVATED",
+          "teams": []
+        }
+      ],
+      "roundConfig": {
+        "1": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "2": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "3": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "4": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "5": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "6": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "7": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 5
+        }
+      }
+    }
+  },
+  "QA9X7G": {
+    "state": {
+      "roomCode": "QA9X7G",
+      "phase": "lobby",
+      "round": 1,
+      "safeZoneActive": false,
+      "teams": {},
+      "pendingAttacks": [],
+      "eventLog": [],
+      "roundConfig": {
+        "1": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "2": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "3": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "4": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "5": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "6": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "7": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 5
+        }
+      }
+    }
+  },
+  "R3NF8U": {
+    "state": {
+      "roomCode": "R3NF8U",
+      "phase": "lobby",
+      "round": 1,
+      "safeZoneActive": false,
+      "teams": {
+        "t_a": {
+          "id": "t_a",
+          "displayName": "a",
+          "socketId": "emW-GlO2zwHXlB7iAAAR",
+          "lives": 0,
+          "tokens": 0,
+          "status": "eliminated",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [],
+          "currentPuzzle": {
+            "id": "e_n_1",
+            "type": "numeric",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "1-12-16-8-1",
+            "hint": "A=1, B=2",
+            "answer": "ALPHA",
+            "answerAliases": [
+              "TEAM ALPHA"
+            ],
+            "theme": "Squad designation",
+            "tokenReward": 2
+          }
+        },
+        "t_b": {
+          "id": "t_b",
+          "displayName": "b",
+          "socketId": "HNRnxaGWUfk9rajhAAAT",
+          "lives": 3,
+          "tokens": 0,
+          "status": "active",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [],
+          "currentPuzzle": {
+            "id": "e_a_4",
+            "type": "acrostic",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "Always Training Towards A Common Kernel",
+            "hint": "First letters",
+            "answer": "ATTACK",
+            "answerAliases": [
+              "ATTACK BASE"
+            ],
+            "theme": "Offensive coordination",
+            "tokenReward": 2
+          }
+        },
+        "t_ba": {
+          "id": "t_ba",
+          "displayName": "ba",
+          "socketId": "WeahYCRFVwZG64eIAAAX",
+          "lives": 3,
+          "tokens": 0,
+          "status": "active",
+          "currentPuzzleIndex": 0,
+          "solvedPuzzleIds": [],
+          "tokenHistory": [],
+          "currentPuzzle": {
+            "id": "e_n_1",
+            "type": "numeric",
+            "difficulty": "easy",
+            "pool": "main",
+            "cipherText": "1-12-16-8-1",
+            "hint": "A=1, B=2",
+            "answer": "ALPHA",
+            "answerAliases": [
+              "TEAM ALPHA"
+            ],
+            "theme": "Squad designation",
+            "tokenReward": 2
+          }
+        }
+      },
+      "pendingAttacks": [],
+      "eventLog": [
+        {
+          "id": "698f5ef7-b178-4435-bdc4-216062a68125",
+          "timestamp": 1777835517885,
+          "type": "neutral",
+          "message": "[00:41] ba joined the room",
+          "teams": [
+            "t_ba"
+          ]
+        },
+        {
+          "id": "d81dc68f-a57b-44ba-a8a5-1a55114f6210",
+          "timestamp": 1777835348599,
+          "type": "attack",
+          "message": "[00:39] a HAS BEEN ELIMINATED",
+          "teams": [
+            "t_a"
+          ]
+        },
+        {
+          "id": "28a8b3e8-5f6c-4a7e-8109-530494e68fb3",
+          "timestamp": 1777835326105,
+          "type": "neutral",
+          "message": "[00:38] b joined the room",
+          "teams": [
+            "t_b"
+          ]
+        },
+        {
+          "id": "ba32cdef-b7f3-469c-bfe0-52d23ec7072f",
+          "timestamp": 1777835318757,
+          "type": "neutral",
+          "message": "[00:38] a joined the room",
+          "teams": [
+            "t_a"
+          ]
+        }
+      ],
+      "roundConfig": {
+        "1": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "2": {
+          "difficulty": "easy",
+          "attacksAllowed": true,
+          "tokenReward": 2
+        },
+        "3": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "4": {
+          "difficulty": "medium",
+          "attacksAllowed": true,
+          "tokenReward": 3
+        },
+        "5": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "6": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 4
+        },
+        "7": {
+          "difficulty": "hard",
+          "attacksAllowed": true,
+          "tokenReward": 5
+        }
+      }
+    }
+  }
+}

@@ -1,21 +1,30 @@
 import { v4 as uuidv4 } from 'uuid';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const configPath = path.join(__dirname, '..', 'game-config.json');
+const gameConfig = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 
 export class BattleManager {
+  static get CONFIG() {
+    return gameConfig;
+  }
+
   static get COSTS() {
-    return {
-      ATTACK: 5,
-      SHIELD: 3,
-      GAMBLE: 3
-    };
+    return gameConfig.costs;
   }
 
   static createAttack(fromTeamId, targetTeamId, puzzleId) {
+    const defenseMs = (gameConfig.timers.DEFENSE_SECONDS || 60) * 1000;
     return {
       id: uuidv4(),
       fromTeam: fromTeamId,
       toTeam: targetTeamId,
       defPuzzleId: puzzleId,
-      deadline: Date.now() + 60000 // 60 seconds
+      deadline: Date.now() + defenseMs
     };
   }
 

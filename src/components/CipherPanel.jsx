@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function CipherPanel({ type, text, hint, isSuccess }) {
+export default function CipherPanel({ type, text, hint, isSuccess, isError }) {
   const [wipe, setWipe] = useState(false);
   const [displayedText, setDisplayedText] = useState("");
 
@@ -41,7 +41,7 @@ export default function CipherPanel({ type, text, hint, isSuccess }) {
   }, []);
 
   return (
-    <div className="panel-surface" style={{
+    <div className={`panel-surface ${isError ? 'puzzle-flicker' : ''}`} style={{
       position: 'relative',
       border: `1px solid ${isSuccess ? 'var(--color-success)' : 'var(--color-border)'}`,
       height: '350px',

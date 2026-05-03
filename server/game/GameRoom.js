@@ -35,7 +35,7 @@ export class GameRoom {
         id: teamId,
         displayName,
         socketId,
-        lives: 3,
+        lives: BattleManager.CONFIG.tuning.STARTING_LIVES || 3,
         tokens: 0,
         status: "active",
         currentPuzzleIndex: 0,
@@ -50,7 +50,7 @@ export class GameRoom {
     } else {
       // Re-join
       this.state.teams[teamId].socketId = socketId;
-      this.broadcastState();
+      this.broadcastTeamUpdate(teamId);
       return true;
     }
   }
@@ -77,7 +77,7 @@ export class GameRoom {
       this._addToLog("solve", `${team.displayName} solved cipher (+${tokenReward} tokens)`, [teamId]);
       
       const nextPuzzle = this._assignNextPuzzle(teamId);
-      this.broadcastState();
+      this.broadcastTeamUpdate(teamId);
       return { correct: true, tokensEarned: tokenReward, nextPuzzle };
     }
 
@@ -97,8 +97,18 @@ export class GameRoom {
       return { success: false, error: validation.error };
     }
 
-    team.tokens -= BattleManager.COSTS.ATTACK;
-    team.tokenHistory.push({ timestamp: Date.now(), amount: -BattleManager.COSTS.ATTACK, reason: "launched attack" });
+    let attackCost = BattleManager.COSTS.ATTACK;
+    if (team.firewallPenalty) {
+      attackCost += 3; // Firewall penalty
+      team.firewallPenalty = false; // consume it
+    }
+
+    if (team.tokens < attackCost) {
+      return { success: false, error: "Not enough tokens (Firewall active?)" };
+    }
+
+    team.tokens -= attackCost;
+    team.tokenHistory.push({ timestamp: Date.now(), amount: -attackCost, reason: "launched attack" });
     
     targetTeam.status = "defending";
 
@@ -113,17 +123,65 @@ export class GameRoom {
       emitToSocket(this.io, targetTeam.socketId, "attack_incoming", {
         attackId: attack.id,
         fromTeam: team.displayName,
-        puzzle: defPuzzle,
+        puzzle: { ...defPuzzle, answer: undefined, answerAliases: undefined },
         deadline: attack.deadline
       });
     }
 
+    const timerMs = (BattleManager.CONFIG.timers.DEFENSE_SECONDS || 60) * 1000;
     const timer = setTimeout(() => {
       this.resolveDefenseTimeout(attack.id);
-    }, 60000);
+    }, timerMs);
     this.defenseTimers.set(attack.id, timer);
 
+    this.broadcastTeamUpdate(fromTeamId);
     return { success: true, attackId: attack.id };
+  }
+
+  buyTime(teamId, attackId) {
+    const team = this.state.teams[teamId];
+    const attack = this.state.pendingAttacks.find(a => a.id === attackId);
+    const cost = BattleManager.CONFIG.costs.BUY_TIME || 2;
+    
+    if (!team || !attack || team.tokens < cost) return { success: false };
+
+    team.tokens -= cost;
+    attack.deadline += 15000; // extend by 15s
+
+    // Reset timer
+    clearTimeout(this.defenseTimers.get(attackId));
+    const remaining = Math.max(0, attack.deadline - Date.now());
+    const timer = setTimeout(() => {
+      this.resolveDefenseTimeout(attackId);
+    }, remaining);
+    this.defenseTimers.set(attackId, timer);
+
+    this.broadcastTeamUpdate(teamId);
+    this._addToLog("neutral", `${team.displayName} bought time (+15s)`, [teamId]);
+    
+    if (team.socketId) {
+      emitToSocket(this.io, team.socketId, "time_bought", { attackId, newDeadline: attack.deadline });
+    }
+    
+    return { success: true };
+  }
+
+  deployFirewall(teamId, attackId) {
+    const team = this.state.teams[teamId];
+    const attack = this.state.pendingAttacks.find(a => a.id === attackId);
+    const cost = BattleManager.CONFIG.costs.DEPLOY_FIREWALL || 3;
+
+    if (!team || !attack || team.tokens < cost) return { success: false };
+
+    team.tokens -= cost;
+    const attacker = this.state.teams[attack.fromTeam];
+    if (attacker) {
+      attacker.firewallPenalty = true;
+      this._addToLog("neutral", `${team.displayName} deployed FIREWALL against ${attacker.displayName}`, [teamId, attacker.id]);
+    }
+
+    this.broadcastTeamUpdate(teamId);
+    return { success: true };
   }
 
   submitDefense(teamId, attackId, answer) {
@@ -144,9 +202,10 @@ export class GameRoom {
       team.status = "active";
       
       const attacker = this.state.teams[attack.fromTeam];
-      if (attacker && attacker.tokens >= 2) {
-        attacker.tokens -= 2; // penalty
-        attacker.tokenHistory.push({ timestamp: Date.now(), amount: -2, reason: "failed attack penalty" });
+      const penalty = BattleManager.CONFIG.rewards.FAILED_ATTACK_PENALTY || 2;
+      if (attacker && attacker.tokens >= penalty) {
+        attacker.tokens -= penalty; // penalty
+        attacker.tokenHistory.push({ timestamp: Date.now(), amount: -penalty, reason: "failed attack penalty" });
       }
 
       this._addToLog("success", `${team.displayName} repelled attack from ${attacker?.displayName || 'Unknown'}`, [teamId, attack.fromTeam]);
@@ -205,7 +264,7 @@ export class GameRoom {
     const gamblePuzzle = this.puzzleManager.getRandomPuzzle("hard", "gamble", team.solvedPuzzleIds);
     this._addToLog("neutral", `${team.displayName} initiated a gamble`, [teamId]);
     this.broadcastState();
-    return { success: true, puzzle: gamblePuzzle };
+    return { success: true, puzzle: { ...gamblePuzzle, answer: undefined, answerAliases: undefined } };
   }
 
   advanceRound() {
@@ -278,6 +337,7 @@ export class GameRoom {
     if (team) {
       team.tokens += amount;
       team.tokenHistory.push({ timestamp: Date.now(), amount, reason });
+      this.broadcastTeamUpdate(teamId);
     }
   }
 
@@ -286,21 +346,59 @@ export class GameRoom {
   }
 
   broadcastState() {
-    broadcastState(this.io, this.state.roomCode, this.state);
+    const sanitizedState = {
+      ...this.state,
+      teams: Object.fromEntries(Object.entries(this.state.teams).map(([id, t]) => [
+        id, 
+        {
+          ...t,
+          currentPuzzle: t.currentPuzzle ? {
+            ...t.currentPuzzle,
+            answer: undefined,
+            answerAliases: undefined
+          } : null
+        }
+      ]))
+    };
+    broadcastState(this.io, this.state.roomCode, sanitizedState);
+  }
+
+  broadcastTeamUpdate(teamId) {
+    const t = this.state.teams[teamId];
+    if (!t) return;
+    const sanitizedTeam = {
+      ...t,
+      currentPuzzle: t.currentPuzzle ? {
+        ...t.currentPuzzle,
+        answer: undefined,
+        answerAliases: undefined
+      } : null
+    };
+    this.io.to(this.state.roomCode).emit("team_updated", { teamId, team: sanitizedTeam });
+  }
+
+  broadcastEvent(event) {
+    this.io.to(this.state.roomCode).emit("event_logged", {
+      id: event.id,
+      text: event.message,
+      type: event.type
+    });
   }
 
   _addToLog(type, message, teams) {
     const now = new Date();
     const ts = `[${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}]`;
-    this.state.eventLog.unshift({
+    const event = {
       id: uuidv4(),
       timestamp: Date.now(),
       type,
       message: `${ts} ${message}`,
       teams
-    });
+    };
+    this.state.eventLog.unshift(event);
     
     if (this.state.eventLog.length > 50) this.state.eventLog.pop();
+    this.broadcastEvent(event);
   }
 
   _checkElimination(teamId) {
